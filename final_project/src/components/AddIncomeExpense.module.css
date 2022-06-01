@@ -1,0 +1,51 @@
+.form-add-income-expense {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input-text {
+}
+
+.form-input-text::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
+}
+.form-input-text:focus {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
+}
+
+.select-finance-group-type {
+}
+
+.select-finance-type {
+}
+
+.form-add-income-expense > * {
+  border-radius: 0.1rem;
+  padding: 0.2rem;
+  background-color: #ffbf69;
+  color: black;
+}
+
+.form-add-income-expense > :focus {
+  outline: 0.1rem solid white;
+  border: none;
+  color: white;
+}
+
+.form-submit-button {
+  background-color: #2ec4b6;
+  color: white;
+  font-weight: bold;
+  transition: 200ms;
+}
+
+.form-submit-button:active {
+  background-color: #24ead6;
+  outline: 0.2rem solid #24ead6;
+}
+
+.form-add-income-expense > :not(:last-child) {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,30 @@
+.finance-dashboard-box-header {
+  color: black;
+  text-align: left;
+  padding: 0.3rem;
+}
+
+.header-with-navigation-button-container {
+  display: flex;
+  width: 100%;
+}
+
+.finance-dashboard-box-button {
+  margin-left: auto;
+  padding: 0.5rem;
+  border-radius: 0 0 0 0.3rem;
+  opacity: 0.5;
+  transition: 300ms;
+  font-weight: 600;
+}
+
+.finance-dashboard-box-button:focus {
+  opacity: 0.8;
+  transition: 300ms;
+}
+
+.finance-dashboard-box-button:active {
+  opacity: 1;
+  border-radius: 0 0 0 1rem;
+  color: black;
+}

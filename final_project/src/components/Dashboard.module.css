@@ -1,0 +1,42 @@
+.dashboard-container {
+  background-color: ffffff;
+}
+
+.income-expenses-div {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.dashboard-container-header {
+  padding: 1rem;
+  text-align: left;
+}
+
+.app-button {
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: ;
+  font-size: 30px;
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  /* top: 100%; */
+  bottom: 0;
+  right: 0;
+  margin: 0.5rem;
+  background-color: #df820046;
+  transition: 300ms;
+}
+
+.app-button:focus {
+  background-color: #df8200ae;
+}
+
+.app-button:active {
+  height: 4.2rem;
+  width: 4.2rem;
+  color: rgba(0, 0, 0, 0.481);
+  background-color: #df8200;
+}
