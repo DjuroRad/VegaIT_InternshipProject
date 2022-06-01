@@ -1,6 +1,4 @@
-import React from "react";
-
-import styles from "./TableIncomeExpense.module.css";
+import styles from "./TableIncomeExpenseGroup.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   solid,
@@ -16,7 +14,7 @@ function handleClick() {
   alert("clicked");
 }
 
-const TableIncomeExpense = () => {
+const TableIncomeExpenseGroup = () => {
   const removeButton = (
     <ButtonWIthIcon
       onClick={handleClick}
@@ -39,45 +37,36 @@ const TableIncomeExpense = () => {
     />
   );
 
-  const columnNames: string[] = [
-    "No.",
-    "Group name",
-    "Amount",
-    "Description",
-    "Date",
-  ];
+  const columnNames: string[] = ["No.", "prva kolona", "druga kolona"];
   //dummy data, wil be fetched from the server
   const tableRows: TableRow[] = [
     {
       components: [
         <p>1</p>,
-        <p>ime grupe</p>,
-        <div>amount</div>,
-        <p>opis</p>,
-        <p>12.01.2020</p>,
+        <p>ime</p>,
+        <div>opis</div>,
         editButton,
+        detailButton,
         removeButton,
       ],
     },
     {
       components: [
         <p>2</p>,
-        <p>ime grupe</p>,
-        <div>amount</div>,
-        <p>opis</p>,
-        <p>12.01.2020</p>,
+        <p>ime</p>,
+        <div>opis</div>,
         editButton,
+        detailButton,
         removeButton,
       ],
     },
     {
       components: [
         <p>3</p>,
-        <p>ime grupe</p>,
-        <div>amount</div>,
-        <p>opis</p>,
-        <p>12.01.2020</p>,
+        <p>ime</p>,
+        <div>opis</div>,
         editButton,
+        detailButton,
         removeButton,
       ],
     },
@@ -90,4 +79,4 @@ const TableIncomeExpense = () => {
   );
 };
 
-export default TableIncomeExpense;
+export default TableIncomeExpenseGroup;

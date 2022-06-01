@@ -1,0 +1,26 @@
+.table-general {
+  margin: auto;
+  background-color: #ffbf69;
+  padding: 0.5rem;
+  width: 100%;
+  /* border-spacing: 0; */
+  border-spacing: 0.5rem;
+}
+
+/* td {
+  border: 2px solid #ff9f1c;
+  background-color: white;
+  padding: 0;
+  border-radius: 0.1rem;
+  margin: 2px;
+  transition: 200ms;
+} */
+tr {
+  /* background-color: green; */
+}
+
+td:hover,
+td:active {
+  border-color: 1px solid white;
+  color: white;
+}

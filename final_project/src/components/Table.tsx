@@ -1,6 +1,7 @@
 import styles from "./Table.module.css";
 
 import React, { Component, ReactNode } from "react";
+import { FinanceType } from "../Types";
 
 interface TableProps {
   columnNames: string[];
@@ -13,9 +14,11 @@ export interface TableRow {
 }
 
 const Table = ({ tableRows, columnNames }: TableProps) => {
+  //   const styleType: FinanceType = FinanceType.INCOME;
+
   return (
-    <div>
-      <table>
+    <div className={styles["container-div-for-table"]}>
+      <table className={styles["table-general"]}>
         {embedColumnNames(columnNames)}
         {embedRows(tableRows)}
       </table>
