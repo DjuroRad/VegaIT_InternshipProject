@@ -1,0 +1,35 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.412);
+}
+.overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+}
+
+.modal-content-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.modal-close-button {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-100%);
+  color: white;
+  font-weight: bold;
+  margin-left: auto;
+}

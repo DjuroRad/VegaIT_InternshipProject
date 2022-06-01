@@ -1,0 +1,7 @@
+.finance-dashboard-box-container {
+  margin-bottom: 2rem;
+}
+
+.finance-dashboard-box-container:last-child {
+  margin-bottom: 0;
+}
