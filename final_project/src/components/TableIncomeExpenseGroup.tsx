@@ -1,4 +1,5 @@
 import styles from "./TableIncomeExpenseGroup.module.css";
+import { FinanceType } from "../Types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   solid,
@@ -14,7 +15,13 @@ function handleClick() {
   alert("clicked");
 }
 
-const TableIncomeExpenseGroup = () => {
+interface TableIncomeExpenseGroupProps {
+  financeType: FinanceType;
+}
+
+const TableIncomeExpenseGroup = ({
+  financeType,
+}: TableIncomeExpenseGroupProps) => {
   const removeButton = (
     <ButtonWIthIcon
       onClick={handleClick}
@@ -44,7 +51,7 @@ const TableIncomeExpenseGroup = () => {
       components: [
         <p>1</p>,
         <p>ime</p>,
-        <div>opis</div>,
+        <div>financeType</div>,
         editButton,
         detailButton,
         removeButton,
@@ -54,7 +61,7 @@ const TableIncomeExpenseGroup = () => {
       components: [
         <p>2</p>,
         <p>ime</p>,
-        <div>opis</div>,
+        <div>financeType</div>,
         editButton,
         detailButton,
         removeButton,
@@ -64,7 +71,7 @@ const TableIncomeExpenseGroup = () => {
       components: [
         <p>3</p>,
         <p>ime</p>,
-        <div>opis</div>,
+        <div>financeType</div>,
         editButton,
         detailButton,
         removeButton,

@@ -4,7 +4,7 @@ import FinanceEntry from "./FinanceEntry";
 import HeaderWithNavigationButton from "./HeaderWithNavigationButton";
 
 interface FinanceDashboardBoxInterface {
-  type: "income" | "expenses";
+  type: "income" | "expense";
   // const onClick(): ;
 }
 

@@ -11,12 +11,17 @@ import { IconName } from "@fortawesome/fontawesome-svg-core";
 
 import Table, { TableRow } from "./Table";
 import ButtonWIthIcon from "./ButtonWIthIcon";
+import { FinanceType } from "../Types";
+
+interface TableIncomeExpenseProps {
+  financeType: FinanceType;
+}
 
 function handleClick() {
   alert("clicked");
 }
 
-const TableIncomeExpense = () => {
+const TableIncomeExpense = ({ financeType }: TableIncomeExpenseProps) => {
   const removeButton = (
     <ButtonWIthIcon
       onClick={handleClick}
