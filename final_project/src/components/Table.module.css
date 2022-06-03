@@ -5,18 +5,12 @@
   width: 100%;
   /* border-spacing: 0; */
   border-spacing: 0.5rem;
+  overflow-x: scroll;
+  width: 100vw;
 }
 
-/* td {
-  border: 2px solid #ff9f1c;
-  background-color: white;
-  padding: 0;
-  border-radius: 0.1rem;
-  margin: 2px;
-  transition: 200ms;
-} */
-tr {
-  /* background-color: green; */
+.container-div-for-table {
+  overflow-x: auto;
 }
 
 td:hover,

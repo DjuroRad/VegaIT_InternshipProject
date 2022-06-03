@@ -20,7 +20,7 @@ const Dashboard = () => {
       <AmountWithDiagram />
       <div className={styles["income-expenses-div"]}>
         <FinanceDashboardBox type={"income"} />
-        <FinanceDashboardBox type={"expenses"} />
+        <FinanceDashboardBox type={"expense"} />
       </div>
 
       {popUpOpened && (
