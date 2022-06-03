@@ -14,8 +14,6 @@ export interface TableRow {
 }
 
 const Table = ({ tableRows, columnNames }: TableProps) => {
-  //   const styleType: FinanceType = FinanceType.INCOME;
-
   return (
     <div className={styles["container-div-for-table"]}>
       <table className={styles["table-general"]}>
